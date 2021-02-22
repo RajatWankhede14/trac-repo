@@ -29,25 +29,20 @@
 /* Header */
 
 .background-image {
-  background-color: rgb(250, 207, 66);
+  background-image: rgb(250, 207, 66);
   width: 100%;
-  height: 100vh;
-  text-align: center;
 }
 
-.background-image > h2 {
-  padding-top: 200px;
-  font-weight: 600;
-}
-
-.background-image > h5 {
-  padding-top: 30px;
+.brochure-1 {
+  width: 100%;
+  object-fit: contain;
 }
 
 /* Reasons */
 
-.reasons {
-  height: 70vh;
+.reason-img {
+  width: 100%;
+  object-fit: contain;
 }
 
 .reasons > h4 {
@@ -59,7 +54,6 @@
 .reasons > .row {
   text-align: center;
   margin-left: auto;
-  height: 300px;
   padding-bottom: 40px;
   padding-top: 20px;
 }
@@ -86,7 +80,6 @@
   background-color: rgb(250, 207, 66);
   margin-top: 40px;
   text-align: center;
-  height: 50vh;
 }
 
 .courses > h4 {
@@ -153,6 +146,11 @@
   padding-bottom: 60px;
 }
 
+.about-img {
+  width: 100%;
+  object-fit: contain;
+}
+
 #about-desc {
   text-align: justify;
 }
@@ -174,6 +172,7 @@
   width: 100%;
   padding-right: 20px;
   padding-bottom: 20px;
+  padding-left: 20px;
 }
 
 .about-message > ol {
