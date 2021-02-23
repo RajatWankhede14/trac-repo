@@ -21,9 +21,9 @@
 <body>
    <header>
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a href="#" class="navbar-brand">
+                <!-- <a href="#" class="navbar-brand">
                     <img height="48px" src="./images/trac-logo.png" alt="trac-logo">
-                </a>
+                </a> -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -34,11 +34,11 @@
                             <a href="#" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#gallery" class="nav-link">Gallery</a>
-                        </li>
-                        <li class="nav-item">
                             <a href="#about" class="nav-link">About</a>
                         </li>
+                        <li class="nav-item">
+                          <a href="#gallery" class="nav-link">Gallery</a>
+                      </li>
                         <li class="nav-item">
                             <a href="#contact" class="nav-link">Contact Us</a>
                         </li>
@@ -46,9 +46,30 @@
                 </div>
             </nav>
 
-            <div class="background-image">
-              <img class="brochure-1" src="./images/photos/brochure-1.jpg" alt="bg-image">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./images/photos/brochure-1.jpg" class="d-block w-100" alt="brochure-1">
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/photos/brochure2.jpg" class="d-block w-100" alt="brochure-2">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
+
+           
     </header>
 
     <section>
@@ -80,6 +101,11 @@
                     <p>Detailed Test Series</p>
                 </div>
             </div>
+        </div>
+
+        <div class="results">
+          <h3>20+ students scoring 100/100 in Mathematics every year</h3>
+          <h3>15+ students scoring 100/100 in Science every year</h3>
         </div>
     </section>
 
@@ -135,15 +161,52 @@
         </div>
     </section>
 
+    <section id="about">
+      <h4>About</h4>
+      <div class="row">
+          <div class="col-md-6 about-message">
+              <img class="about-img" src="./images/about-img.jpg" alt="pic">
+
+              <h6>DIRECTOR'S MESSAGE</h6>
+              <p>"Exam stress is tough but if you want to get somewhere, you have to put the work in."</p>
+              <p>“The only way to learn mathematics is to do mathematics.”</p>
+              
+          </div>
+          <div id="about-desc" class="col-md-6">
+            <ol>
+              <h3>Gaurav Namjoshi </h3>
+              <h5>Director, TRAC Learning System</h5>
+              <li><h6>B.Sc Physics Statistics Maths</h6></li>
+              <li><h6>M.Sc Statistics</h6></li>
+              <li><h6>MBA Finance & Marketing</h6></li>
+              <li><h6>15+ years of Teaching</h6></li>
+              <li><h6>Inventor of MOM Technique</h6></li>
+              <li><h6>Catered to more than 10,000 students.</h6></li> 
+              <li>
+                <p>A Passionate maths teacher with a vision to develop interest in Mathematics and make it simple for students.</p>
+              </li>             
+              <li><p>Director of TRAC Learning - A Coaching Institute for CBSE only providing extensive learning for subjects like Maths, Science & Social Science. It is also well regarded for giving a phenomenal result of 100% in first class every year since its inception (2013).</p></li>
+              <li>
+                <p>TRAC Learning Systems believes in overall development of students with more focus being given on conceptual development in each subject, which ultimately has been producing such a phenomenal result every year.</p>
+              </li>
+              <li>
+                <span>20+ students scoring 100/100 in Mathematics every year</span>
+              </li>
+              <li>
+                <span>15+ students scoring 100/100 in Science every year</span>
+              </li>
+            </ol>
+            
+          </div>
+      </div>
+  </section>
+
     <section id="gallery">
         <h4>Gallery</h4>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner  bg-dark">
               <div class="carousel-item active">
-                <img src="./images/photos/entry.JPG" class="d-block w-100" alt="pic-1">
-              </div>
-              <div class="carousel-item">
-                <img src="./images/photos/brochure2.jpg" class="d-block w-100" alt="pic-2">
+                <img src="./images/photos/entry.png" class="d-block w-100" alt="pic-1">
               </div>
               <div class="carousel-item">
                 <img src="./images/photos/classroom 3.JPG" class="d-block w-100" alt="pic-3">
@@ -163,50 +226,7 @@
           </div>
     </section>
 
-    <section id="about">
-        <h4>About</h4>
-        <div class="row">
-            <div class="col-md-6 about-message">
-                <img class="about-img" src="./images/about-img.jpg" alt="pic">
 
-                <h6>DIRECTOR'S MESSAGE</h6>
-                <p>Exam stress is tough but if you want to get somewhere, you have to put the work in. </p>
-                <ol>
-                  <li>“The only way to learn mathematics is to do mathematics.”</li>
-                  <li>“Studying whether there's life on Mars or studying how the universe began, there's something magical about pushing back the frontiers of knowledge. That's something that is almost part of being human and I'm certain that will continue.”</li>
-                  <li>“The best way to predict your future is to create it.”</li>
-                  <li>“Success is walking from failure to failure with no loss of enthusiasm.”</li>
-                  </ol>
-                
-            </div>
-            <div id="about-desc" class="col-md-6">
-              <ol>
-                <h3>Gaurav Namjoshi </h3>
-                <h5>Director, TRAC Learning System</h5>
-                <li><h6>B.Sc Physics Statistics Maths</h6></li>
-                <li><h6>M.Sc Statistics</h6></li>
-                <li><h6>MBA Finance & Marketing</h6></li>
-                <li><h6>15+ years of Teaching</h6></li>
-                <li><h6>Inventor of MOM Technique</h6></li>
-                <li><h6>Catered to more than 10,000 students.</h6></li> 
-                <li>
-                  <p>A Passionate maths teacher with a vision to develop interest in Mathematics and make it simple for students.</p>
-                </li>             
-                <li><p>Director of TRAC Learning - A Coaching Institute for CBSE only providing extensive learning for subjects like Maths, Science & Social Science. It is also well regarded for giving a phenomenal result of 100% in first class every year since its inception (2013).</p></li>
-                <li>
-                  <p>TRAC Learning Systems believes in overall development of students with more focus being given on conceptual development in each subject, which ultimately has been producing such a phenomenal result every year.</p>
-                </li>
-                <li>
-                  <span>20+ students scoring 100/100 in Mathematics every year</span>
-                </li>
-                <li>
-                  <span>15+ students scoring 100/100 in Science every year</span>
-                </li>
-              </ol>
-              
-            </div>
-        </div>
-    </section>
 
     <footer id="contact"> 
       <h4>Contact Us</h4>
