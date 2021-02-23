@@ -36,6 +36,8 @@
 .results {
   text-align: center;
   color: red;
+  padding: 20px;
+  margin-left: auto;
 }
 
 header > .carousel {
@@ -116,27 +118,6 @@ header > .carousel {
   border: 3px solid red;
 }
 
-.
-
-/* Gallery */
-
-#gallery {
-  padding: 30px;
-  margin-bottom: 40px;
-}
-
-#gallery > h4 {
-  padding: 30px;
-  text-align: center;
-  font-weight: 600;
-}
-
-.carousel-item > img {
-  width: 100%;
-  height: 100vh;
-  object-fit: contain;
-}
-
 /* About */
 
 #about {
@@ -194,6 +175,25 @@ header > .carousel {
 span {
   color: red;
   font-weight: 600;
+}
+
+/* Gallery */
+
+#gallery {
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+#gallery > h4 {
+  padding: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.carousel-item > img {
+  width: 100%;
+  height: 100vh;
+  object-fit: contain;
 }
 
 /* Contact */
